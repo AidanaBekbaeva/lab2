@@ -1,21 +1,18 @@
 2)<html>
-    <head>
+<head>
+  <meta charset="utf-8">
+  <title>Task2-4</title>
 </head>
- <script>
-n= Number(prompt("Îëøåìè"," "));
-a= []
-for (var i=0;i<n;i++){
-a.push(Math.round(Math.random()*10));
-}
-var min = a[0];
-for(var k=1;k<a.length;k++) {
-if (a[k]<min) {
-min=a[k];
-}
-}
-alert(a)
-alert("\n åí òîìåí ìàíè: " +min);
-</script>       
+<body>
 
-
+<script >
+	var maxNum = [5, -1, 40, 150, 17, 3];
+for (var i = 0; i < maxNum.length; i++) {
+    if(maxNum[i] > maxNum[0]){
+        maxNum[0] = maxNum[i];
+    }
+}
+alert(maxNum[0]);
+</script>
+</body>
 </html>
